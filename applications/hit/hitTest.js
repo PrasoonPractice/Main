@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.log("Lable added to the group");
 		
 		//load the 3d model using a loder object
-		const avatar = loadGLTF('../Project1/person/Avatar.gltf');
+		const avatar = await loadGLTF('../Project1/person/Avatar.gltf');
 		
 		avatar.scene.scale.set(1.2, 1.2, 1.2);
 		avatar.scene.position.x = xPose - 0.75 ;
