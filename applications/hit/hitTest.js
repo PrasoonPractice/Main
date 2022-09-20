@@ -68,15 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.log("Lable added to the group");
 		
 		//load the 3d model using a loder object
-		const avatar = await loadGLTF('../Project1/person/Avatar.gltf');
+		//const avatar = await loadGLTF('../Project1/person/Avatar.gltf');
 		
-		avatar.scene.scale.set(1.2, 1.2, 1.2);
-		avatar.scene.position.x = xPose - 0.75 ;
-		avatar.scene.position.y = yPose - 1.22 ;
-		avatar.scene.position.z = zPose - 0.2;
-		console.log(avatar.scene);				
-		items.add(avatar.scene);
-		console.log("Avatar added to group");
+		//avatar.scene.scale.set(1.2, 1.2, 1.2);
+		//avatar.scene.position.x = xPose - 0.75 ;
+		//avatar.scene.position.y = yPose - 1.22 ;
+		//avatar.scene.position.z = zPose - 0.2;
+		//console.log(avatar.scene);				
+		//items.add(avatar.scene);
+		//console.log("Avatar added to group");
 		
 		//create icones, card, card background and icon shelf
 		const [
@@ -198,9 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 		
 		// show idel animation
-		const mixer = new THREE.AnimationMixer(avatar.scene);
-		const action = mixer.clipAction(avatar.animations[0]);
-		action.play();
+		//const mixer = new THREE.AnimationMixer(avatar.scene);
+		//const action = mixer.clipAction(avatar.animations[0]);
+		//action.play();
 		//creat an event listner for when an event occure once an event start
 		document.body.addEventListener('click', (e) => {
 			const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
